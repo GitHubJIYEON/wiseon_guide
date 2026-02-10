@@ -5,4 +5,5 @@ export default {
     scale: "척도형",
     description: "설명형",
     agreement: "개인정보동의",
+    startEndMessage: "시작·종료 안내문",
 };
