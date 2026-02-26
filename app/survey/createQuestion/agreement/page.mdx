@@ -1,18 +1,22 @@
+---
+title: "설문 문항 - 개인정보동의"
+description: "개인정보동의 문항에서 수집 항목, 이용 목적, 보유 기간을 안내하고 동의 절차를 구성하는 방법을 안내합니다."
+---
+
+import Image from "next/image";
+
 # 설문 문항 - 개인정보동의
 
 설문 문항 중에서 개인정보동의를 만드는 방법을 안내합니다.
 
 <br />
-<img
-    src="/survey/surveyQuestion_agreement.jpg"
-    alt="개인정보동의 유형"
-    style={{
-        maxWidth: "100%",
-        height: "auto",
-        borderRadius: "8px",
-        border: "1px solid #e5e7eb",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-    }}
+<Image
+  src="/guide/survey/survey_question_agreement.webp"
+  alt="설문 문항 - 개인정보동의 유형"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto w-full rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
 />
 
 개인정보동의 문항은 응답자에게  
@@ -34,13 +38,17 @@
 
 ---
 
-## 개인정보동의 문항 생성 방법
+## 개인정보동의 문항 추가하기
 
 ### 1️⃣ 문항 유형 선택
 
-우측 문항 유형에서
+**방법1. 가운데 문항 편집 '메인으로' 탭 선택하여 추가하기**
 
-**`개인정보동의`** 를 선택합니다.
+[이미지]
+
+**방법2. 좌측 '사이드바'에서 추가하기**
+
+[이미지]
 
 ---
 
@@ -151,5 +159,5 @@
 
 ## 다음 단계
 
-설문 프로젝트에서 **시작 안내문** 과 **종료 안내문** 을 설정할 수 있습니다.  
-👉 설문 **시작·종료 안내문**을 자세히 알고 싶다면 [**시작·종료 안내문**](/survey/createQuestion/startEndMessage) 을 참고하세요.
+설문 문항에서 **시작 안내문** 과 **종료 안내문** 을 설정할 수 있습니다.  
+👉 설문 **시작·종료 안내문**을 자세히 알고 싶다면 [**시작·종료 안내문**](/guide/survey/createQuestion/startEndMessage) 을 참고하세요.

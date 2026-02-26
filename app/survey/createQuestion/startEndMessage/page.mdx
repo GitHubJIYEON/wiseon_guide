@@ -1,16 +1,20 @@
+---
+title: "설문 시작·종료 안내문"
+description: "설문 시작 안내문과 종료 안내문을 설정해 응답자 경험을 개선하고 안내 메시지를 효과적으로 구성하는 방법을 안내합니다."
+---
+
+import Image from "next/image";
+
 # 설문 시작·종료 안내문
 
 <br />
-<img
-    src="/survey/startEndMessage.jpg"
-    alt="설문프로젝트만들기0"
-    style={{
-        maxWidth: "80%",
-        height: "auto",
-        borderRadius: "8px",
-        border: "1px solid #e5e7eb",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-    }}
+<Image
+  src="/guide/survey/survey_create_start_end.webp"
+  alt="설문 시작·종료 안내문"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto w-[90%] rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
 />
 <br />
 
@@ -33,11 +37,21 @@
 
 ### 작성 방법
 
-1. 좌측 메뉴에서 **[시작 안내문]**을 선택합니다.
-2. 기본 문구(예: `설문을 시작합니다`)를 수정하거나,
-3. 안내 문구 입력란에 원하는 내용을 자유롭게 작성합니다.
-    - 공백 포함 **최대 100자까지 입력 가능**
-4. 작성 후 **[수정]** 버튼을 눌러 저장합니다.
+<br />
+<Image
+  src="/guide/survey/survey_create_start_text.webp"
+  alt="설문 문항 만들기 - 시작 안내문"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto w-full rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+1. 좌측 메뉴에서 **시작 안내문**을 선택합니다.
+2. 기본 문구(예: `설문을 시작합니다`)를 수정하거나,  
+   안내 문구 입력란에 원하는 내용을 자유롭게 작성합니다.
+   - 공백 포함 **최대 100자까지 입력 가능**
+3. 작성 후 **수정** 버튼을 눌러 저장합니다.
 
 ---
 
@@ -55,6 +69,7 @@
 - 응답자의 부담을 줄이기 위해 **긍정적이고 부드러운 표현**이 좋습니다.
 - 개인정보 수집이 없는 경우, **익명성 안내**를 함께 넣어주면 신뢰도가 높아집니다.
 
+<br />
 ## 종료 안내문
 
 ### 종료 안내문이란?
@@ -74,11 +89,21 @@
 
 ### 작성 방법
 
-1. 좌측 메뉴에서 **[종료 안내문]**을 선택합니다.
-2. 기본 문구(예: `설문 제출이 완료되었습니다`)를 수정하거나,
-3. 안내 문구 입력란에 원하는 내용을 작성합니다.
-    - 공백 포함 **최대 100자까지 입력 가능**
-4. **[수정]** 버튼을 눌러 저장하면 즉시 반영됩니다.
+<br />
+<Image
+  src="/guide/survey/survey_create_end_text.webp"
+  alt="설문 문항 만들기 - 종료 안내문"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto w-full rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+1. 좌측 메뉴에서 **종료 안내문** 을 선택합니다.
+2. 기본 문구(예: `설문 제출이 완료되었습니다`)를 수정하거나,  
+   안내 문구 입력란에 원하는 내용을 작성합니다.
+   - 공백 포함 **최대 100자까지 입력 가능**
+3. **수정** 버튼을 눌러 저장하면 즉시 반영됩니다.
 
 ---
 
@@ -103,5 +128,5 @@
 
 ## 다음 단계
 
-설문 문항을 다 작성했다면 **미리보기**를 통해 설문을 테스트 할 수 있습니다.  
-👉 **설문 미리보기**을 자세히 알고 싶다면 [**설문 미리보기**](/survey/preview)를 참고하세요.
+설문 문항을 다 작성했다면 **설문 페이지를 설정** 할 수 있습니다.  
+👉 **페이지 설정**에 대하여 자세히 알고 싶다면 [**기능 - 페이지 설정**](/guide/survey/createQuestion/aboutPage)를 참고하세요.

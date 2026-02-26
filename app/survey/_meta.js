@@ -4,7 +4,7 @@ export default {
     create: "설문 프로젝트 만들기",
     createQuestion: "설문 문항 만들기",
     preview: "설문 미리보기",
-    list: "설문 프로젝트 목록",
     deploy: "설문 배포",
     responses: "설문 응답 현황",
+    list: "설문 프로젝트 목록",
 };

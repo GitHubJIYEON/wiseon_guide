@@ -9,7 +9,4 @@ export default {
 
     // 분석
     analysis: "와이즈온 분석",
-
-    // 관리자
-    admin: "와이즈온 관리자",
 };

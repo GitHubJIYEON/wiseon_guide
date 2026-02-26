@@ -1,22 +1,97 @@
+---
+title: "설문 배포"
+description: "익명 링크와 개인 링크를 활용해 설문을 배포하고, 대상과 목적에 맞는 배포 방식을 선택하는 방법을 안내합니다."
+---
+
+import Image from "next/image";
+
 # 설문 배포
 
 설문을 배포하는 방법을 안내합니다.
 
-<img
-    src="/survey/survey_deploy.jpg"
-    alt="분석 한눈에 보기"
-    style={{
-        maxWidth: "80%",
-        height: "auto",
-        borderRadius: "8px",
-        border: "1px solid #e5e7eb",
-        boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-    }}
+<Image
+  src="/guide/survey/survey_deploy_main.webp"
+  alt="설문 배포"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto w-[90%] rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
 />
 
 ## 개요
 
 작성한 설문을 응답자에게 배포하는 방법을 안내합니다.
+
+## 설문 상태
+
+설문 배포 전에 꼭 확인해야 하는 **설문 상태**가 있습니다.  
+설문의 상태는 **"🔵작성", "🟢진행", "🟠완료"** 가 있으며  
+각 상태에 따라 **사용할 수 있는 기능**을 안내합니다.
+
+### 설문 상태 - 작성
+
+<br />
+<Image
+  src="/guide/survey/survey_status_writing1.webp"
+  alt="설문 상태 - 작성"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+🔵 **작성**
+
+- 설문 문항을 **자유롭게 편집 가능한** 상태
+- 설문 작성 중으로 **응답은 받을 수 없는** 상태
+
+### 설문 상태 - 진행
+
+<br />
+<Image
+  src="/guide/survey/survey_status_progress.webp"
+  alt="설문 상태 - 진행"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+🟢 **진행**
+
+- 설문이 시작되어 **설문 응답을 받을 수 있는** 상태
+- 설문 진행 상태에서는 **문항 생성, 수정, 삭제 할 수 없음**
+
+- 만약에 **진행** 상태에서 **설문 문항을 수정**해야 하는 경우,  
+  설문 상태를 **"작성"** 으로 변경 하여 문항 수정 가능하며
+  **부분적으로 수정**이 가능합니다.
+  <br />
+  <Image
+    src="/guide/survey/survey_status_writing.webp"
+    alt="설문 상태 - 진행"
+    width={1600}
+    height={900}
+    priority
+    className="block h-auto rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+  />
+
+### 설문 상태 - 완료
+
+<br />
+<Image
+  src="/guide/survey/survey_status_completed.webp"
+  alt="설문 상태 - 완료"
+  width={1600}
+  height={900}
+  priority
+  className="block h-auto rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+🟠 **완료**
+
+- 설문 **응답을 더 이상 받지 않는 경우,** 즉 설문이 완전히 종료된 상태
+- 한번이라도 "완료" 상태를 선택 했다면, **"작성", "진행" 상태**로 돌아갈 수 **없음**
+- 설문 완료 후 **응답 데이터를 사용하여 "분석하기" 활용이 가능함**
 
 ## 배포 방법
 
@@ -24,15 +99,25 @@
 
 **익명 링크란?**
 
-익명 링크는 개인 정보 없이 설문을 배포하는 방식입니다.
+익명 링크는 개인 정보 없이 설문을 배포하는 방식입니다.  
 하나의 URL로 여러 응답자가 참여할 수 있으며, 응답자는 완전히 익명으로 설문에 참여할 수 있습니다.
 
 **익명 링크 사용 방법**
 
-1. 상단 메뉴에서 [배포] 탭 선택
-2. 왼쪽 메뉴에서 익명 링크 선택
-3. 생성된 설문 URL을 복사
-4. 문자, 메신저, 이메일, 홈페이지 등 원하는 채널로 링크 붙여넣기 배포
+<br />
+<Image
+  src="/guide/survey/survey_deploy_anonymous.webp"
+  alt="익명 링크 사용 방법"
+  width={1200}
+  height={800}
+  priority
+  className="block h-auto w-[90%] rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+1. 상단 메뉴에서 **배포** 탭 선택
+2. 왼쪽 메뉴에서 **익명 링크** 선택
+3. 생성된 설문 **URL을 복사**
+4. 문자, 메신저, 이메일, 홈페이지 등 원하는 채널로 **링크 붙여넣기 배포**
 
 **익명 링크 특징**
 
@@ -54,9 +139,9 @@
 
 **개인 링크란?**
 
-개인 링크는 응답자별로 고유한 설문 URL을 생성하여,
-누가 응답했는지 시스템에서 구분·관리할 수 있는 배포 방식입니다.
-응답자의 신원 정보와 설문 결과를 정확하게 매칭할 수 있어,
+개인 링크는 응답자별로 고유한 설문 URL을 생성하여,  
+누가 응답했는지 시스템에서 구분·관리할 수 있는 배포 방식입니다.  
+응답자의 신원 정보와 설문 결과를 정확하게 매칭할 수 있어,  
 대상자별 분석이 필요한 설문에 적합합니다.
 
 - 응답자마다 고유한 설문 URL이 생성됩니다.
@@ -65,12 +150,22 @@
 
 **개인 링크 사용 방법**
 
-1. 상단 메뉴에서 **[배포]** 탭 선택
+<br />
+<Image
+  src="/guide/survey/survey_deploy_individual.webp"
+  alt="개인 링크 사용 방법"
+  width={1200}
+  height={800}
+  priority
+  className="block h-auto w-[90%] rounded-lg border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
+/>
+
+1. 상단 메뉴에서 **배포** 탭 선택
 2. 왼쪽 메뉴에서 **개인 링크** 선택
-3. **[링크 생성]** 버튼 클릭
-4. 개인 링크를 공유 할 정보 입력 또는 엑셀 파일로 데이터 등록
-    - 개인 링크 생성 시, 제목
-    - 개인 정보 입력: 휴대폰번호, 이메일, 이름 등
+3. **링크 생성** 버튼 클릭
+4. 개인 링크를 공유 할 **정보 입력** 또는 **엑셀 파일**로 데이터 등록
+   - 개인 링크 생성 시, 제목
+   - 개인 정보 입력: 휴대폰번호, 이메일, 이름 등
 5. **저장** 버튼 클릭 → 개인 링크 생성 완료
 
 ## 다음 단계
@@ -78,4 +173,4 @@
 설문을 배포했다면, 이제 응답이 어떻게 수집되고 있는지 확인할 차례입니다.  
 **설문 응답 현황**에서는 **실시간 응답 수와 진행 상태**를 파악할 수 있습니다.
 
-👉 **설문 진행 상태**를 자세히 알고 싶다면 [**설문 응답 현황**](/survey/responses)를 참고하세요.
+👉 **설문 진행 상태**를 자세히 알고 싶다면 [**설문 응답 현황**](/guide/survey/responses)를 참고하세요.
