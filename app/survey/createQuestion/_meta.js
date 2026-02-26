@@ -6,4 +6,5 @@ export default {
     description: "설명형",
     agreement: "개인정보동의",
     startEndMessage: "시작·종료 안내문",
+    aboutPage: "기능-페이지 설정",
 };
